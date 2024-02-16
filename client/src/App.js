@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import injectContext, { Context } from '../../../clinipay/client/src/content/appContext';
+import injectContext from './store/appContext';
+import { Context } from './store/appContext';
 
 function App() {
 
