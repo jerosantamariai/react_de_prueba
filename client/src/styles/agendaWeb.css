@@ -1,0 +1,80 @@
+/* CSS Global */
+
+@font-face {
+    font-family: varelaRound;
+    src: url(../static/fonts/VarelaRound-Regular.otf);
+  }
+  
+  * {
+    font-family: varelaRound;
+  }
+  
+  .container {
+    min-height: 30vh;
+    max-width: 100vw;
+    margin: 0 !important;
+  }
+  
+  .center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .iconMed {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .iconSide {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .enConstruccion {
+    width: 100vw;
+  }
+  
+  .push-end{
+    position: absolute;
+    right: 30px;
+  }
+  
+  .fakedash{
+    width: 98vw;
+    height: 90vh;
+  }
+  
+  .scrollTable {
+    max-width: 98vw;
+    overflow-x: scroll;
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+  
+  .spinner-conf{
+      width: 3rem; 
+      height: 3rem;
+      color: #59449B !important;
+  }
+  
+  .btn-success {
+    background-color: #59449B !important;
+    border-color: #59449B !important;
+  }
+  
+  .btn-warning {
+    background-color: #DD3F93 !important;
+    border-color: #DD3F93 !important;
+  }
+  
+  .btn-danger {
+    background-color: #D3D1D2 !important;
+    border-color: #D3D1D2 !important;
+  }
+  
+  

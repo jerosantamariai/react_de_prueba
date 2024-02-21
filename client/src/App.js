@@ -1,14 +1,17 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import injectContext from './store/appContext';
-import { Context } from './store/appContext';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './views/home';
 
 function App() {
-
-  const { store, actions } = useContext(Context);
-
   return (
     <div>
-      <h1>Módulo de Pruebas para APIs</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="*" element={<div>Aqui no hay nada</div>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

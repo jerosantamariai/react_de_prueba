@@ -2,6 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
     return {
         store: {
             variablePrueba: null,
+            etnias: null,
         },
         actions: {
             // ! BASE DE PETICIONES
@@ -88,7 +89,24 @@ const getState = ({ getStore, getActions, setStore }) => {
                         console.log(error)
                     })
             },
-
+            
+            getEtnias: url => {
+                fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(resp => resp.json())
+                    .then(data => {
+                        setStore({
+                            etnias: data
+                        })
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    })
+            },
             
         },
     }

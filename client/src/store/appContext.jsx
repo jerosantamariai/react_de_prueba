@@ -21,6 +21,8 @@ const injectContext = PassedComponent => {
         componentDidMount(){
             // Estructura básica para crear el enrutamiento a una API
             this.state.actions.getPrueba('https://jsonplaceholder.typicode.com/comments');
+            this.state.actions.getEtnias('http://10.40.20.11:5105/api/Global/BuscarEtnias');
+            
         }
 
         render(){
